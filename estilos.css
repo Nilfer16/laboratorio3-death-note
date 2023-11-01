@@ -3,11 +3,20 @@ body {
     background-color:#111111 /*#000*/; /* Establece el color de fondo en negro (#000) */
     color: #fff; /* Establece el color del texto en blanco (#fff) */
     font-family: Arial, sans-serif; /* Define la fuente del texto como Arial o fuentes sans-serif */
+    background-image: url(imagenes/IMAGEN_FONDOO3.png); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+     box-sizing: border-box;
+        
     
 }
 .logo{
+    width: 250px; /* Tamaño del logo para la versión de escritorio */
+
 	display: inline-block;
 }
+
 
 /* Estilo para el encabezado (header) */
 header {
@@ -23,33 +32,63 @@ header {
     margin: 0; /* Eliminar márgenes predeterminados */
 }
 
-/* Estilo para el menú de navegación (nav) */
+/*------------------------------------------------*/
 .menu-nav {
-    text-align: right; /* Alinea los elementos del menú a la derecha */
+    text-align: right;
 }
 
-nav ul {
+.menu-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.menu-nav ul li {
+    display: inline-block; /* Muestra los elementos en bloque */
+    position: relative; /* Agrega posición relativa para contener la sublista */
+    padding: 15px 20px; /* Ajusta el espacio entre los elementos */
 }
 
-/* Cambiar el color del texto del enlace en el menú de navegación */
-nav ul li a {
+.menu-nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size:20px;
+    font-size: 20px;
 }
 
-/* Estilo para el enlace en el menú de navegación al pasar el cursor (hover) */
-nav ul li a:hover {
+.menu-nav ul li a:hover {
     color: red;
 }
+
+.menu-nav ul li:hover .sublista {
+    display: block;
+}
+
+.sublista {
+    width: 120px; /* Ajusta el ancho de la sublista según tus preferencias */
+    display: none;
+    position: absolute;
+    background-color: #000;
+    padding: 10px;
+    top: 100%; /* Ajusta la posición vertical de la sublista */
+    left: 50%; /* Centra la sublista horizontalmente */
+    transform: translateX(-50%); /* Centra la sublista horizontalmente */
+}
+
+.sublista li {
+    text-align: center; /* Alinea el texto de la sublista horizontalmente */
+    margin: 5px 0;
+}
+
+.sublista a {
+    color: #fff; /* Cambia el color del texto de la sublista a blanco */
+    text-decoration: none;
+}
+
+.sublista a:hover {
+    color: red;
+}
+/*------------------------------------------------*/
 
 /* Estilo para el título principal (h1) */
 h1 {
@@ -85,14 +124,17 @@ h1 {
 
 /* Estilo para el resumen de la historia */
 .resumen-historia {
-    flex: 1; /* Ocupa el espacio restante en el contenedor */
-    padding: 20px; /* Agrega espacio interno */
-    text-align: justify; /* Justifica el texto para un aspecto más limpio */
-    max-width: 50%; /* Limita el ancho máximo del texto al 50% del contenedor */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+       background-color: #A60606;
+    display: flex;
+    height: auto;
+}
+.resumen-historia p {
+    text-align: left;
+    margin: 10px;
 }
 /* Estilo para las imágenes */
 .imagenes {
+    background-color: #transparent;
     flex: 1; /* Ocupa el espacio restante en el contenedor */
     display: flex; /* Utiliza flexbox para alinear las imágenes verticalmente */
     flex-direction: column; /* Alinea las imágenes una debajo de la otra */
@@ -100,7 +142,8 @@ h1 {
 }
 
 .imagenes img {
-   margin-top: 55px; /* Mueve las imágenes hacia abajo en 20 píxeles */
+    margin-right: 30px;
+   
 }
 
 /* Estilo para las tarjetas de personajes */
@@ -246,18 +289,21 @@ body h1{
   
   text-align: center;
 }
+.contact-form input{
+    margin-right: 100px;
+}
 
 
 
 .contact-form {
-  background-color: #A60606; /* Fondo rojo para el formulario */
+  background-color: #A60606;
   display: inline-block;
   padding: 20px;
   text-align: left;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 600px;
-
+  margin: 0 auto; /* Centrar el formulario horizontalmente en la versión de escritorio */
 }
 
 label {
@@ -277,7 +323,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #AB1111; /* Fondo rojo para el botón */
+  background-color: #00 /*#AB1111; /* Fondo rojo para el botón */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -293,12 +339,191 @@ input[type="submit"] {
     border: 2px solid white;
 
 }
-.personajes{
+.personajess{
+    background-color: #A60606;
 	display: flex;
+    height: auto;
 }
 
-.personajes p{
+.personajess p{
 	margin-left:20px ;
 	font-size: 20px;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 575px) {
+      .checkbtn {
+        display: block;
+    }
+    header i{
+        font-size: 20px;
+    }
+    .logo {
+        width: 200px; /* Tamaño del logo para dispositivos móviles (ajusta el tamaño según tus necesidades) */
+    }
+     .check-input {
+        display: none; /* Oculta el checkbox en dispositivos móviles */
+    }
+
+    .checkbtn {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+        ul {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        padding-top: 20px; /* Añade espacio superior para separar el menú de la parte superior */
+    }
+    ul.active {
+        left: 0;
+    }
+
+    .menu-nav ul li {
+    display: block; /* Muestra los elementos en bloque */
+    position: relative; /* Agrega posición relativa para contener la sublista */
+    padding: 15px 20px; /* Ajusta el espacio entre los elementos */
+}
+    ul li a {
+        font-size: 20px;
+        margin-left: 7%;
+        color: white;
+    }
+    ul li a:hover,
+    ul li a.active {
+        background: none;
+    }
+    ul li:hover .sublista {
+        display: block;
+        top: 0; /* Ajusta la posición de la sublista para que no se superponga con los elementos anteriores */
+    }
+    .sublista {
+        display: none;
+        position: relative; /* Usa posición relativa para alinear la sublista con respecto al elemento padre */
+        background-color: #000;
+        padding: 10px;
+    }
+    .sublista li {
+        text-align: center; /* Centra el texto horizontalmente en las sublistas */
+        margin: 5px 0;
+    }
+    .sublista a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .sublista a:hover {
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    /* Estilos para dispositivos móviles */
+    .article-secundario .imagenes img {
+        max-width: 100%; /* Reduce el ancho de la imagen en pantallas más pequeñas */
+    }
+    .article-secundario {
+        display: block; /* Cambia a bloque en la versión móvil */
+    }
+
+    .article-secundario .resumen-historia {
+        width: 95%; /* Ocupa el 95% del ancho disponible */
+        margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    }
+
+    /* Estilo para el párrafo dentro de la tarjeta en la versión móvil */
+    .article-secundario .resumen-historia p {
+        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        line-height: 1.4; /* Espaciado entre líneas ligeramente mayor para una mejor legibilidad */
+    }
+
+
+
+    .article-secundario .imagenes {
+        margin: 20px;
+        order: 2; /* Cambia el orden de la imagen para que esté debajo en la versión móvil */
+        backgrund-color: transparent;
+    }
+
+.curiosidad {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: center; /* Centra verticalmente los elementos en la columna */
+        border-radius: 20px;
+    }
+
+    .curiosidad img {
+        margin-bottom: 15px;
+        order: 2; /* Cambia el orden de la imagen para que aparezca debajo del párrafo */
+    }
+
+    .curiosidad p {
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+
+   .contact-form {
+    width: 90%; /* Reducir el ancho del formulario para dispositivos móviles */
+    margin: 0 auto; /* Centrar el formulario horizontalmente en dispositivos móviles */
+    padding: 10px; /* Reducir el espacio interno del formulario para dispositivos móviles */
+  }
+
+  /* Ajustes para los elementos del formulario */
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form input[type="submit"] {
+    width: 100%; /* Ocupar todo el ancho de la tarjeta en dispositivos móviles */
+    font-size: 16px; /* Reducir el tamaño de la fuente si es necesario */
+    margin-bottom: 10px; /* Espaciado inferior entre elementos */
+  }
+
+  .personajess {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .personajess p {
+        font-size: 20px;
+        margin: 10px 20px;
+    }
+
+    .personajess img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid white;
+        order: 2; /* Cambia el orden de aparición para que la imagen esté después del párrafo */
+    }
+    .teoria-content {
+        flex-direction: column; /* Cambia la dirección de la distribución a columna */
+    }
+
+    .teoria-card img {
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+    .intro-teorias img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
 
 }

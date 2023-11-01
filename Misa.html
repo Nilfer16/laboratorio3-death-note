@@ -2,40 +2,60 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Death Note</title>
+    <title>Misa Amane</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.css">
     <meta name="keywords" content="Light, L, Death Note">
     <meta name="description" content="Página FANDOM de Death Note con contenido de curiosidades e información de los personajes">
+    <title>Titulo celu</title>
+    <script src="https://kit.fontawesome.com/3e32f3aa7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    <a href="index.html"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
-    
+     <a href="index.html" class="enlase"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
         <nav class="menu-nav">
+             <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
+                <li class="personajes">
+                    <a href="personajes.html">Personajes</a>
+                    <ul class="sublista">
+                        <li><a href="Kira.html">Light</a></li>
+                        <li><a href="L.html">L</a></li>
+                        <li><a href="Ryuk.html">Ryuk</a></li>
+                        <li><a href="Misa.html">Misa</a></li>
+                        <li><a href="Near.html">Near</a></li>
+                        <li><a href="Mello.html">Mello</a></li>
+                    </ul>
+                </li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="teorias.html">Teorias</a></li>
                 <li><a href="momentos.html">Mejores Momentos</a></li>
                 <li><a href="nosotros.html">Contacto</a></li>
-                
             </ul>
         </nav>
         
     </header>
  <h2 class="personajes-h2">Misa Amane</h2>
-<div class="personajes">
+<div class="personajess">
    
 
-<img src="imagenes/personajess/misa-portadaa.jpg"class="personajes-img" alt="Light Imagen">
+    <a href="imagenes/personajess/misa-portadaa.jpg" data-lightbox="galeria" data-title="Misa Misa">
+        <img src="imagenes/personajess/misa-portadaa.jpg"class="personajes-img" alt="Light Imagen"></a>
 <p>Misa es una famosa idolo pop y adoradora de Kira. Es impulsiva y apasionada, y se obsesiona con Light después de descubrir que también es Kira. A pesar de su personalidad alegre, Misa es vulnerable y sufre por su pasado traumático. Su deseo de ayudar a Kira la lleva a actuar impulsivamente, lo que a menudo la coloca en situaciones peligrosas.
     
 </p>
     
 </div> 
+<footer>
+    <p>Creado por  Nil Fernandez Sorrius © 2023 </p>
+</footer>
 </body>
- <footer>
-        <p>Pagina echa con amor <3 © 2023 - Nil Fernandez Sorrius</p>
-    </footer>
+ 
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </html>

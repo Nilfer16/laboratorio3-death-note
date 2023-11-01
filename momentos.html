@@ -2,24 +2,41 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Death Note</title>
+    <title>Mejores Momentos</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.css">
     <meta name="keywords" content="Light, L, Death Note">
     <meta name="description" content="Página FANDOM de Death Note con contenido de curiosidades e información de los personajes">
+   <title>Titulo celu</title>
+    <script src="https://kit.fontawesome.com/3e32f3aa7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    <a href="index.html"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
-    
+     <a href="index.html" class="enlase"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
         <nav class="menu-nav">
+             <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
+                <li class="personajes">
+                    <a href="personajes.html">Personajes</a>
+                    <ul class="sublista">
+                        <li><a href="Kira.html">Light</a></li>
+                        <li><a href="L.html">L</a></li>
+                        <li><a href="Ryuk.html">Ryuk</a></li>
+                        <li><a href="Misa.html">Misa</a></li>
+                        <li><a href="Near.html">Near</a></li>
+                        <li><a href="Mello.html">Mello</a></li>
+                    </ul>
+                </li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="teorias.html">Teorias</a></li>
                 <li><a href="momentos.html">Mejores Momentos</a></li>
                 <li><a href="nosotros.html">Contacto</a></li>
-                
             </ul>
         </nav>
         
@@ -33,14 +50,16 @@
     <div class="row">
         <div class="momento-card">
             <h2>Conocemos por primera vez a L</h2>
-            <img src="imagenes/mejores momentos/Episodio_06_-_Florecer.webp" alt="Mejor Momento 1">
+            <a href="imagenes/mejores momentos/Episodio_06_portada.webp" data-lightbox="galeria" data-title="Episodio 6"> 
+                <img src="imagenes/mejores momentos/Episodio_06_-_Florecer.webp" alt="Mejor Momento 1"></a>
             <p>L necesita el apoyo de la policia y una vez que redujo el grupo a agentes confiables, 
         les muestra su rostro como prueba de su confianza</p><br>
         </div>
 <br>
         <div class="momento-card">
             <h2>Se encuantran Kira y L</h2>
-            <img src="imagenes/mejores momentos/Episodio_09_-_Contacto.webp" alt="Mejor Momento 2">
+            <a href="imagenes/mejores momentos/Episodio_09_-_Contacto.webp" data-lightbox="galeria" data-title="Episodio 9">
+                <img src="imagenes/mejores momentos/Episodio_09_-_Contacto.webp" alt="Mejor Momento 2"></a>
             <p>Luego de que Light y L pasen el examen de la universidad con un puntaje perfecto,
             se conocen durante la ceremonia de ingreso, pero todo era parte del plan de L.</p><br>
         </div>
@@ -49,52 +68,61 @@
     <div class="row">
         <div class="momento-card">
             <h2>Pelea entre Light y L</h2>
-            <img src="imagenes/mejores momentos/Episodio_18_-_Compa.webp" alt="Mejor Momento 3">
+            <a href="imagenes/mejores momentos/Episodio_18_-_Compa.webp" data-lightbox="galeria" data-title="Episodio 18">
+            <img src="imagenes/mejores momentos/Episodio_18_-_Compa.webp" alt="Mejor Momento 3"></a>
             <p>Light al darse cuenta de que L estaba deprimido por no atrapar a Kira, Light lo golpea
             para que se depierte y vuelva a ser el mismo de siempre, esto los llevo a una pelea.</p><br>
         </div>
 <br>
         <div class="momento-card">
             <h2>Kira le gana a L</h2>
-            <img src="imagenes/mejores momentos/Episodio_24_-_Resurreccion.webp" alt="Mejor Momento 4">
+            <a href="imagenes/mejores momentos/Episodio_24_-_Resurreccion.webp"  data-lightbox="galeria" data-title="Episodio 24"> 
+                <img src="imagenes/mejores momentos/Episodio_24_-_Resurreccion.webp" alt="Mejor Momento 4"></a>
             <p>Este es el momento en donde Light completa su plan y la muerte de L es solo
             cuistion de tiempo.</p><br>
         </div>
     <br>
      <div class="momento-card">
         <h2>Conocemos a Near y Mello</h2>
-            <img src="imagenes/mejores momentos/Episodio_27_-_Secuestro.webp" alt="Mejor Momento 4">
+        <a href="imagenes/mejores momentos/Episodio_27_-_Secuestro.webp" data-lightbox="galeria" data-title="Episodio 27">
+             <img src="imagenes/mejores momentos/Episodio_27_-_Secuestro.webp" alt="Mejor Momento 4"></a>
             <p>Este momento vemos a los verdaderos sucesores de L, en donde Near toma el lugar de L.</p><br>
         </div>
     <br>
      <div class="momento-card">
         <h2>Kira descubre la existencia de Near</h2>
-            <img src="imagenes/mejores momentos/Episodio_28_-_Impaciencia.webp" alt="Mejor Momento 4">
+        <a href="imagenes/mejores momentos/Episodio_28_-_Impaciencia.webp" data-lightbox="galeria" data-title="Episodio 28">
+            <img src="imagenes/mejores momentos/Episodio_28_-_Impaciencia.webp" alt="Mejor Momento 4"></a>
             <p>Light habla con Near para hablar de la situacion de Kira, y al hacerlo Light siente
             algo parecido como lo que sentia con L.</p><br>
         </div>
     <br>
      <div class="momento-card">
         <h2>Kira y Near se encuentran</h2>
-            <img src="imagenes/mejores momentos/Episodio_35_-_Desprecio.webp" alt="Mejor Momento 4">
+        <a href="imagenes/mejores momentos/Episodio_35_-_Desprecio.webp" data-lightbox="galeria" data-title="Episodio 35">  
+            <img src="imagenes/mejores momentos/Episodio_35_-_Desprecio.webp" alt="Mejor Momento 4"></a>
             <p>Se da el dia de encuentro entre Light y Near, para terminar con el asunto Kira de una vez por todas.</p><br>
         </div>
     <br>
      <div class="momento-card">
         <h2>Kira cree que ganó</h2>
-            <img src="imagenes/mejores momentos/Episodio_36_-_28_de_enero.webp" alt="Mejor Momento 4">
+        <a href="imagenes/mejores momentos/Episodio_36_-_28_de_enero.webp" data-lightbox="galeria" data-title="Episodio 36">  
+            <img src="imagenes/mejores momentos/Episodio_36_-_28_de_enero.webp" alt="Mejor Momento 4"></a>
             <p>Light analiza la situacion y no puede aguantar la risa por matar a todos los presentes.</p><br>
         </div>
     <br>
      <div class="momento-card">
         <h2>Muerte de Light</h2>
-            <img src="imagenes/mejores momentos/Episodio_37_-_Nuevo_Mundo.webp" alt="Mejor Momento 4">
+        <a href="imagenes/mejores momentos/Episodio_37_-_Nuevo_Mundo.webp" data-lightbox="galeria" data-title="Episodio 37"> 
+            <img src="imagenes/mejores momentos/Episodio_37_-_Nuevo_Mundo.webp" alt="Mejor Momento 4"></a>
             <p>Este es el momento final de Death Note en donde nuestro protagonista llega a su fin
             junto con Kira, luego de que Ryuk escriba su nombre en su Death Note.</p><br>
         </div>
     </div>
  <footer>
-        <p>Pagina echa con amor <3 © 2023 - Nil Fernandez Sorrius</p>
+        <p><p>Creado por  Nil Fernandez Sorrius © 2023 </p></p>
     </footer>
+    
 </body>
+<script src="js/lightbox-plus-jquery.min.js"></script>
 </html>

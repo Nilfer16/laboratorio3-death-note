@@ -2,24 +2,41 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Death Note</title>
+    <title>Teorias de Death Note</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.css">
     <meta name="keywords" content="Light, L, Death Note">
     <meta name="description" content="Página FANDOM de Death Note con contenido de curiosidades e información de los personajes">
+    <title>Titulo celu</title>
+    <script src="https://kit.fontawesome.com/3e32f3aa7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    <a href="index.html"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
-    
+     <a href="index.html" class="enlase"><img src="imagenes/death-note-logo.webp" alt="Death Note" class="logo"></a>
         <nav class="menu-nav">
+             <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
+                <li class="personajes">
+                    <a href="personajes.html">Personajes</a>
+                    <ul class="sublista">
+                        <li><a href="Kira.html">Light</a></li>
+                        <li><a href="L.html">L</a></li>
+                        <li><a href="Ryuk.html">Ryuk</a></li>
+                        <li><a href="Misa.html">Misa</a></li>
+                        <li><a href="Near.html">Near</a></li>
+                        <li><a href="Mello.html">Mello</a></li>
+                    </ul>
+                </li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="teorias.html">Teorias</a></li>
                 <li><a href="momentos.html">Mejores Momentos</a></li>
                 <li><a href="nosotros.html">Contacto</a></li>
-                
             </ul>
         </nav>
         
@@ -30,7 +47,8 @@
 <div class="intro-teorias">
     
     <p>Las siguientes teorías fueron creadas por apasionados fanáticos de Death Note que han explorado diversos aspectos de la serie y han formulado ideas interesantes. Estas teorías ofrecen una perspectiva única y creativa sobre el mundo de Death Note y sus personajes. ¡Sumérgete en estas intrigantes teorías y descubre un nuevo nivel de profundidad en la historia de Light, L, Ryuk y otros personajes icónicos!</p>
-    <img src="imagenes/imagen-L(1).jpg" alt="Imagen de introducción">
+     <a href="imagenes/imagen-L(1).jpg" data-lightbox="galeria" data-title="L mirada">
+        <img src="imagenes/imagen-L(1).jpg" alt="Imagen de introducción"></a>
 </div>
 <h2>Teorias:</h2><br><br>
     <div class="teoria-card">
@@ -64,8 +82,10 @@
         <p>Una teoría más amplia explora la noción de que todos los shinigamis en la serie alguna vez fueron humanos. La teoría argumenta que aquellos que usaron el Death Note se convirtieron en shinigamis después de la muerte. Si bien esto no se confirma en la serie, plantea preguntas interesantes sobre la naturaleza de los shinigamis y sus orígenes.</p>
     </div>
 </div>
- <footer>
-        <p>Pagina echa con amor <3 © 2023 - Nil Fernandez Sorrius</p>
-    </footer>
-    </body>
+<footer>
+    <p>Creado por  Nil Fernandez Sorrius © 2023 </p>
+</footer>
+</body>
+ 
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </html>
