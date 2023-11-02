@@ -285,26 +285,21 @@ body h1{
     border: 2px solid white; /* Agrega un borde blanco de 2 píxeles alrededor de la imagen */
 }
 
-.contact-body {
-  
-  text-align: center;
-}
-.contact-form input{
-    margin-right: 100px;
-}
-
-
-
 .contact-form {
-  background-color: #A60606;
-  display: inline-block;
-  padding: 20px;
-  text-align: left;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 600px;
-  margin: 0 auto; /* Centrar el formulario horizontalmente en la versión de escritorio */
+    background-color: #A60606;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin: 0 auto; /* Centra horizontalmente el formulario sin modificar las clases */
 }
+
+.contact-form input {
+    margin-right: 100px;
+    /* Agrega cualquier estilo adicional que desees sin modificar las clases */
+}
+
 
 label {
   display: block;
@@ -469,8 +464,9 @@ input[type="submit"] {
     }
 
    .contact-form {
-    width: 90%; /* Reducir el ancho del formulario para dispositivos móviles */
-    margin: 0 auto; /* Centrar el formulario horizontalmente en dispositivos móviles */
+    max-width: 100%;
+    width: 80%; /* Reducir el ancho del formulario para dispositivos móviles */
+    margin: 0 10px; /* Centrar el formulario horizontalmente en dispositivos móviles */
     padding: 10px; /* Reducir el espacio interno del formulario para dispositivos móviles */
   }
 
