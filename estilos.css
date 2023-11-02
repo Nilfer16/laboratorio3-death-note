@@ -428,6 +428,7 @@ input[type="submit"] {
     /* Estilos para dispositivos móviles */
     .article-secundario .imagenes img {
         max-width: 100%; /* Reduce el ancho de la imagen en pantallas más pequeñas */
+        margin-left: 30px;
     }
     .article-secundario {
         display: block; /* Cambia a bloque en la versión móvil */
