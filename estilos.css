@@ -411,26 +411,15 @@ input[type="submit"] {
     ul li a.active {
         background: none;
     }
-    ul li:hover .sublista {
-        display: block;
-        top: 0; /* Ajusta la posición de la sublista para que no se superponga con los elementos anteriores */
+    .sublista{
+        background: none;
     }
-    .sublista {
-        display: none;
-        position: relative; /* Usa posición relativa para alinear la sublista con respecto al elemento padre */
-        background-color: #000;
-        padding: 10px;
-    }
+
     .sublista li {
-        text-align: center; /* Centra el texto horizontalmente en las sublistas */
-        margin: 5px 0;
+     display: none;
     }
-    .sublista a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .sublista a:hover {
-        color: red;
+     .sublista li a{
+     display: none;
     }
     #check:checked ~ ul{
         left: 0;
