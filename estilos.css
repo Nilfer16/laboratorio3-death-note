@@ -288,17 +288,46 @@ body h1{
 .contact-form {
     background-color: #A60606;
     padding: 20px;
-    text-align: left;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 600px;
-    margin: 0 auto; /* Centra horizontalmente el formulario sin modificar las clases */
+    width: 300px;
+    margin: 0 auto;
 }
 
-.contact-form input {
-    margin-right: 100px;
-    /* Agrega cualquier estilo adicional que desees sin modificar las clases */
+.contact-form label {
+    display: inline;
+    margin-bottom: 10px;
+    color: #FFF; /* Color de texto blanco */
 }
+
+.contact-form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FFF; /* Borde blanco */
+    border-radius: 5px;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FFF; /* Borde blanco */
+    border-radius: 5px;
+}
+
+.contact-form-button {
+    background-color: #FFF; /* Fondo blanco */
+    color: #A60606; /* Texto rojo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-button:hover {
+    background-color: #FF0000; /* Cambia el fondo a rojo más claro al pasar el mouse */
+}
+
 
 
 label {
