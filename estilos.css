@@ -1,38 +1,31 @@
-/* Establecer el fondo negro como en Death Note */
 body {
-    background-color:#111111 /*#000*/; /* Establece el color de fondo en negro (#000) */
-    color: #fff; /* Establece el color del texto en blanco (#fff) */
-    font-family: Arial, sans-serif; /* Define la fuente del texto como Arial o fuentes sans-serif */
-    background-image: url(imagenes/IMAGEN_FONDOO3.png); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
-     box-sizing: border-box;
-        
-    
+    background-color:#111111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: url(imagenes/IMAGEN_FONDOO3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
 }
+
 .logo{
-    width: 250px; /* Tamaño del logo para la versión de escritorio */
-
-	display: inline-block;
+    width: 250px;
+    display: inline-block;
 }
 
-
-/* Estilo para el encabezado (header) */
 header {
-    display: flex; /* Utilizar Flexbox para alinear los elementos horizontalmente */
-    justify-content: space-between; /* Alinear los elementos del header a los extremos */
-    align-items: center; /* Centrar verticalmente los elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
 }
 
-/* Estilo para el logotipo (imagen del logo) */
 .logo {
-    margin: 0; /* Eliminar márgenes predeterminados */
+    margin: 0;
 }
 
-/*------------------------------------------------*/
 .menu-nav {
     text-align: right;
 }
@@ -45,9 +38,9 @@ header {
 }
 
 .menu-nav ul li {
-    display: inline-block; /* Muestra los elementos en bloque */
-    position: relative; /* Agrega posición relativa para contener la sublista */
-    padding: 15px 20px; /* Ajusta el espacio entre los elementos */
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
 }
 
 .menu-nav ul li a {
@@ -65,88 +58,82 @@ header {
 }
 
 .sublista {
-    width: 120px; /* Ajusta el ancho de la sublista según tus preferencias */
+    width: 120px;
     display: none;
     position: absolute;
     background-color: #000;
     padding: 10px;
-    top: 100%; /* Ajusta la posición vertical de la sublista */
-    left: 50%; /* Centra la sublista horizontalmente */
-    transform: translateX(-50%); /* Centra la sublista horizontalmente */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sublista li {
-    text-align: center; /* Alinea el texto de la sublista horizontalmente */
+    text-align: center;
     margin: 5px 0;
 }
 
 .sublista a {
-    color: #fff; /* Cambia el color del texto de la sublista a blanco */
+    color: #fff;
     text-decoration: none;
 }
 
 .sublista a:hover {
     color: red;
 }
-/*------------------------------------------------*/
 
-/* Estilo para el título principal (h1) */
 h1 {
-    text-align: center; /* Elimina el espacio de margen predeterminado del título principal */
+    text-align: center;
 }
 
-/* Estilo para el contenedor de imagen de fondo */
 .imagen-fondo {
-    background-image: url('tu-imagen-de-fondo.jpg'); /* Establece la imagen de fondo utilizando la ruta proporcionada (reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen) */
-    background-size: cover; /* Hace que la imagen de fondo cubra completamente el contenedor */
-    background-position: center; /* Centra la imagen de fondo horizontalmente en el contenedor */
-      text-align: center; /* Centra el contenido horizontalmente */
-    width: 80%; /* Hace que el contenedor ocupe todo el ancho disponible */
-    height: 1%; /* Hace que el contenedor ocupe todo el alto disponible */
-    display: block; /* Convierte la imagen en un elemento en bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente usando márgenes automáticos */
-}
-.spoiler{
-	text-align: left;
+    background-image: url('tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 80%;
+    height: 1%;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Estilo para la sección de información */
+.spoiler {
+    text-align: left;
+}
+
 #informacion {
-    padding: 20px; /* Agrega espacio interno de 20 píxeles alrededor de la sección de información */
-    text-align: center; /* Centra el texto dentro de la sección de información */
+    padding: 20px;
+    text-align: center;
 }
 
-/* Estilo para el artículo secundario */
 .article-secundario {
-    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+    display: flex;
     justify-content: space-between;
 }
 
-/* Estilo para el resumen de la historia */
 .resumen-historia {
-       background-color: #A60606;
+    background-color: #A60606;
     display: flex;
     height: auto;
 }
+
 .resumen-historia p {
     text-align: left;
     margin: 10px;
 }
-/* Estilo para las imágenes */
+
 .imagenes {
     background-color: #transparent;
-    flex: 1; /* Ocupa el espacio restante en el contenedor */
-    display: flex; /* Utiliza flexbox para alinear las imágenes verticalmente */
-    flex-direction: column; /* Alinea las imágenes una debajo de la otra */
-    align-items: center; /* Centra las imágenes horizontalmente */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagenes img {
     margin-right: 30px;
-   
 }
 
-/* Estilo para las tarjetas de personajes */
 .tarjetas-personajes {
     display: flex;
     flex-wrap: wrap;
@@ -154,10 +141,10 @@ h1 {
 }
 
 .tarjeta {
-	color: white;
+    color: white;
     width: calc(25% - 20px);
     margin: 10px;
-    background-color:#A60606 /*#f0f0f0*/;
+    background-color:#A60606;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -183,18 +170,18 @@ h1 {
     font-size: 0.9em;
 }
 
-body h1{
-	text-decoration: underline;
+body h1 {
+    text-decoration: underline;
 }
 
 .curiosidad {
-	background-color: #A60606;
+    background-color: #A60606;
     display: flex;
     margin: 20px;
 }
 
 .curiosidad img {
-    width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 200px;
     height: auto;
     margin-right: 20px;
 }
@@ -203,30 +190,23 @@ body h1{
     flex: 1;
 }
 
-
 .teoria-card img {
- display: block; /* Centra la imagen horizontalmente */
-    width: 300px; /* Ajusta el ancho a tu preferencia */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    text-align: center; /* Centra el contenido dentro de las cajas */
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-
-
 .teoria-card h2 {
-    margin: 0; /* Elimina el margen predeterminado que puede causar que el título no esté centrado verticalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    color: white; /* Ajusta el color del texto a blanco para que destaque en el fondo rojo */
+    margin: 0;
+    text-align: center;
+    color: white;
 }
 
 .intro-teorias img {
     display: block;
     margin: 0 auto;
 }
-
-
-
-
 
 .teoria-card {
     background-color: #A60606;
@@ -236,53 +216,33 @@ body h1{
     margin-top: 20px;
     text-align: left;
     display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
+    flex-direction: column;
     border-radius: 10px;
 }
 
-
 .teoria-content {
     display: flex;
-    flex-direction: row; /* Alinea los elementos horizontalmente */
-    padding: 10px; /* Agrega espacio interno para separar la imagen del texto */
+    flex-direction: row;
+    padding: 10px;
 }
 
 .teoria-text {
     flex: 1;
-    padding: 10px;
 }
-
-.teoria-card h2 {
-    margin: 0;
-    text-align: center;
-    color: white;
-}
-
-.teoria-card img {
-    display: block;
-    max-width: 100%;
-    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
-     border: 2px solid white; /* Agrega un borde blanco de 2 píxeles alrededor de la imagen */
-}
-
-.teoria-card p {
-    margin: 0; /* Elimina el margen predeterminado del párrafo para una apariencia más limpia */
-}
-
 
 .momento-card {
-	background-color: #A60606;
-    text-align: center; /* Centra el contenido en las tarjetas */
-    margin: 20px auto; /* Centra las tarjetas horizontalmente y agrega espacio vertical */
-    width: 80%; /* Ajusta el ancho de las tarjetas según tu preferencia */
+    background-color: #A60606;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 10px;
 }
 
 .momento-card img {
-    display: block; /* Centra la imagen horizontalmente */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    width: 60%; /* Ajusta el ancho de las imágenes según tu preferencia */
-    border: 2px solid white; /* Agrega un borde blanco de 2 píxeles alrededor de la imagen */
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border: 2px solid white;
 }
 
 .contact-form {
@@ -296,14 +256,14 @@ body h1{
 .contact-form label {
     display: inline;
     margin-bottom: 10px;
-    color: #FFF; /* Color de texto blanco */
+    color: #FFF;
 }
 
 .contact-form-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #FFF; /* Borde blanco */
+    border: 1px solid #FFF;
     border-radius: 5px;
 }
 
@@ -311,13 +271,13 @@ body h1{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #FFF; /* Borde blanco */
+    border: 1px solid #FFF;
     border-radius: 5px;
 }
 
 .contact-form-button {
-    background-color: #FFF; /* Fondo blanco */
-    color: #A60606; /* Texto rojo */
+    background-color:#A60606 ;
+    color: #A60606;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -325,56 +285,52 @@ body h1{
 }
 
 .contact-form-button:hover {
-    background-color: #FF0000; /* Cambia el fondo a rojo más claro al pasar el mouse */
+    background-color: #FF0000;
 }
 
-
-
 label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 1px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1px;
 }
 
 input[type="submit"] {
-  background-color: #00 /*#AB1111; /* Fondo rojo para el botón */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
+    background-color: #00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/*PERSONAJES*/
-.personajes-img{
-	width: 800px;
-	height: auto;
+.personajes-img {
+    width: 800px;
+    height: auto;
     border: 2px solid white;
-
 }
-.personajess{
+
+.personajess {
     background-color: #A60606;
-	display: flex;
+    display: flex;
     height: auto;
 }
 
-.personajess p{
-	margin-left:20px ;
-	font-size: 20px;
-
+.personajess p {
+    margin-left: 20px;
+    font-size: 20px;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -383,22 +339,23 @@ input[type="submit"] {
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
 @media (max-width: 575px) {
-      .checkbtn {
+    .checkbtn {
         display: block;
     }
-    header i{
+    header i {
         font-size: 20px;
     }
     .logo {
-        width: 200px; /* Tamaño del logo para dispositivos móviles (ajusta el tamaño según tus necesidades) */
+        width: 200px;
     }
-     .check-input {
-        display: none; /* Oculta el checkbox en dispositivos móviles */
+    .check-input {
+        display: none;
     }
 
     .checkbtn {
@@ -406,7 +363,7 @@ input[type="submit"] {
         cursor: pointer;
     }
 
-        ul {
+    ul {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -415,17 +372,17 @@ input[type="submit"] {
         left: -100%;
         text-align: center;
         transition: all 0.5s;
-        padding-top: 20px; /* Añade espacio superior para separar el menú de la parte superior */
+        padding-top: 20px;
     }
     ul.active {
         left: 0;
     }
 
     .menu-nav ul li {
-    display: block; /* Muestra los elementos en bloque */
-    position: relative; /* Agrega posición relativa para contener la sublista */
-    padding: 15px 20px; /* Ajusta el espacio entre los elementos */
-}
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
     ul li a {
         font-size: 20px;
         margin-left: 7%;
@@ -435,81 +392,76 @@ input[type="submit"] {
     ul li a.active {
         background: none;
     }
-    .sublista{
+    .sublista {
         background: none;
     }
 
     .sublista li {
-     display: none;
+        display: none;
     }
-     .sublista li a{
-     display: none;
+    .sublista li a {
+        display: none;
     }
-    #check:checked ~ ul{
+    #check:checked ~ ul {
         left: 0;
     }
 
-    /* Estilos para dispositivos móviles */
     .article-secundario .imagenes img {
-        max-width: 100%; /* Reduce el ancho de la imagen en pantallas más pequeñas */
+        max-width: 100%;
         margin-left: 30px;
     }
     .article-secundario {
-        display: block; /* Cambia a bloque en la versión móvil */
+        display: block;
     }
 
     .article-secundario .resumen-historia {
-        width: 95%; /* Ocupa el 95% del ancho disponible */
-        margin: 0 auto; /* Centra la tarjeta horizontalmente */
+        width: 95%;
+        margin: 0 auto;
     }
 
-    /* Estilo para el párrafo dentro de la tarjeta en la versión móvil */
     .article-secundario .resumen-historia p {
-        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
-        line-height: 1.4; /* Espaciado entre líneas ligeramente mayor para una mejor legibilidad */
+        font-size: 14px;
+        line-height: 1.4;
     }
-
-
 
     .article-secundario .imagenes {
         margin: 20px;
-        order: 2; /* Cambia el orden de la imagen para que esté debajo en la versión móvil */
+        order: 2;
         backgrund-color: transparent;
     }
 
-.curiosidad {
-        flex-direction: column; /* Cambia la dirección del flex container a columna */
-        align-items: center; /* Centra verticalmente los elementos en la columna */
+    .curiosidad {
+        flex-direction: column;
+        align-items: center;
         border-radius: 20px;
     }
 
     .curiosidad img {
         margin-bottom: 15px;
-        order: 2; /* Cambia el orden de la imagen para que aparezca debajo del párrafo */
+        order: 2;
     }
 
     .curiosidad p {
-        text-align: center; /* Centra el texto horizontalmente */
+        text-align: center;
     }
 
-   .contact-form {
-    max-width: 100%;
-    width: 80%; /* Reducir el ancho del formulario para dispositivos móviles */
-    margin: 0 10px; /* Centrar el formulario horizontalmente en dispositivos móviles */
-    padding: 10px; /* Reducir el espacio interno del formulario para dispositivos móviles */
-  }
+    .contact-form {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 10px;
+        padding: 10px;
+    }
 
-  /* Ajustes para los elementos del formulario */
-  .contact-form label,
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form input[type="submit"] {
-    width: 100%; /* Ocupar todo el ancho de la tarjeta en dispositivos móviles */
-    font-size: 16px; /* Reducir el tamaño de la fuente si es necesario */
-    margin-bottom: 10px; /* Espaciado inferior entre elementos */
-  }
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form input[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
-  .personajess {
+    .personajess {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -524,21 +476,20 @@ input[type="submit"] {
         max-width: 100%;
         height: auto;
         border: 2px solid white;
-        order: 2; /* Cambia el orden de aparición para que la imagen esté después del párrafo */
+        order: 2;
     }
     .teoria-content {
-        flex-direction: column; /* Cambia la dirección de la distribución a columna */
+        flex-direction: column;
     }
 
     .teoria-card img {
-        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        max-width: 100%;
+        margin: 0 auto;
     }
     .intro-teorias img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-}
-
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
 }
