@@ -191,6 +191,7 @@ body h1 {
 }
 
 .teoria-card img {
+     border: 2px solid white;
     display: block;
     width: 300px;
     margin: 0 auto;
@@ -227,6 +228,7 @@ body h1 {
 }
 
 .teoria-text {
+    margin-left: 20px;
     flex: 1;
 }
 
