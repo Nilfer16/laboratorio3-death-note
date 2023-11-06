@@ -369,7 +369,7 @@ input[type="submit"] {
     display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .checkbtn {
         display: block;
     }
